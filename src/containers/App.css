@@ -1,3 +1,12 @@
+@font-face {
+  src: url(Raleway-Regular.ttf);
+  font-family: Raleway;
+}
+
+* {
+  font-family: Raleway;
+}
+
 .App {
   text-align: center;
 }
@@ -11,6 +20,10 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+.highlight {
+  font-weight: 600;
 }
 
 .App-header {
