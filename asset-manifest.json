@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/portfolio-website/static/css/main.2284cdf2.chunk.css",
+    "main.js": "/portfolio-website/static/js/main.1e1eb615.chunk.js",
+    "main.js.map": "/portfolio-website/static/js/main.1e1eb615.chunk.js.map",
+    "runtime-main.js": "/portfolio-website/static/js/runtime-main.c16362e1.js",
+    "runtime-main.js.map": "/portfolio-website/static/js/runtime-main.c16362e1.js.map",
+    "static/js/2.8c4729ad.chunk.js": "/portfolio-website/static/js/2.8c4729ad.chunk.js",
+    "static/js/2.8c4729ad.chunk.js.map": "/portfolio-website/static/js/2.8c4729ad.chunk.js.map",
+    "index.html": "/portfolio-website/index.html",
+    "precache-manifest.dd3099b43f0b06f865fccf041c53fd26.js": "/portfolio-website/precache-manifest.dd3099b43f0b06f865fccf041c53fd26.js",
+    "service-worker.js": "/portfolio-website/service-worker.js",
+    "static/css/main.2284cdf2.chunk.css.map": "/portfolio-website/static/css/main.2284cdf2.chunk.css.map",
+    "static/js/2.8c4729ad.chunk.js.LICENSE.txt": "/portfolio-website/static/js/2.8c4729ad.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/portfolio-website/static/media/Raleway-Regular.9942588a.ttf",
+    "static/media/arrow.1f14ea36.svg": "/portfolio-website/static/media/arrow.1f14ea36.svg",
+    "static/media/css-5.6971ddc7.svg": "/portfolio-website/static/media/css-5.6971ddc7.svg",
+    "static/media/html5.f0361c5e.svg": "/portfolio-website/static/media/html5.f0361c5e.svg",
+    "static/media/js.891a71b9.svg": "/portfolio-website/static/media/js.891a71b9.svg",
+    "static/media/material-ui-1.82291019.svg": "/portfolio-website/static/media/material-ui-1.82291019.svg",
+    "static/media/nodejs-icon.b337a2fb.svg": "/portfolio-website/static/media/nodejs-icon.b337a2fb.svg",
+    "static/media/postgresql.d7c985e7.svg": "/portfolio-website/static/media/postgresql.d7c985e7.svg",
+    "static/media/react.4009eef3.svg": "/portfolio-website/static/media/react.4009eef3.svg",
+    "static/media/sass-1.b446ca5a.svg": "/portfolio-website/static/media/sass-1.b446ca5a.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c16362e1.js",
+    "static/js/2.8c4729ad.chunk.js",
+    "static/css/main.2284cdf2.chunk.css",
+    "static/js/main.1e1eb615.chunk.js"
+  ]
+}
