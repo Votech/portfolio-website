@@ -1,18 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import Particles from "react-particles-js";
 import "./Hello.css";
+import { ReactComponent as Arrow } from "./arrow.svg";
 
 const particlesOptions = {
   particles: {
     number: {
-      value: 60,
+      value: 100,
     },
     links: {
       color: "#ffffff",
       distance: 200,
       enable: true,
       opacity: 0.5,
-      width: 1,
+      width: 0.25,
     },
     opacity: {
       value: 1,
@@ -26,11 +27,11 @@ const particlesOptions = {
       enable: true,
       outMode: "bounce",
       random: false,
-      speed: 2,
+      speed: 1,
       straight: false,
     },
     size: {
-      value: 3,
+      value: 2.5,
       random: false,
     },
     color: {
@@ -57,6 +58,8 @@ const particlesOptions = {
 };
 
 const Hello = () => {
+  const [hovered, setHovered] = useState(false);
+  const toggleHover = () => setHovered(!hovered);
   return (
     <div>
       <div className="container">
@@ -70,7 +73,14 @@ const Hello = () => {
             </span>
             . <br></br> I'm a full-stack developer.
           </div>
-          <button>View my work</button>
+          <button
+            className="first_button"
+            onMouseEnter={toggleHover}
+            onMouseLeave={toggleHover}
+          >
+            <div>View my work</div>{" "}
+            <Arrow className={hovered ? "arrow arrowRotate" : "arrow"} />
+          </button>
         </div>
       </div>
     </div>
