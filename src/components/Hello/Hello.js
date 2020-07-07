@@ -62,7 +62,7 @@ const Hello = () => {
   const toggleHover = () => setHovered(!hovered);
   return (
     <div>
-      <div className="container">
+      <div className="container" id="home">
         <Particles className="particles" params={particlesOptions} />
         <div className="wrapper">
           <div className="text">

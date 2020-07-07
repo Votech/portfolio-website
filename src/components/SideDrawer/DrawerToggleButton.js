@@ -3,7 +3,7 @@ import "./DrawerToggleButton.css";
 
 const drawerToggleButton = (props) => {
   return (
-    <button className="toggle_button">
+    <button className="toggle_button" onClick={props.click}>
       <div className="toggle_button_line" />
       <div className="toggle_button_line" />
       <div className="toggle_button_line" />

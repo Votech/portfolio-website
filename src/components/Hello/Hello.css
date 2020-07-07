@@ -63,3 +63,13 @@ button:hover {
   transform: rotate(90deg);
   transition: transform 0.3s;
 }
+
+@media (max-width: 768px) {
+  .container {
+    padding-top: 6vh;
+    height: 94vh;
+  }
+  .particles {
+    height: 94vh;
+  }
+}

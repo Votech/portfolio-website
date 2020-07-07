@@ -1,6 +1,6 @@
 .container2 {
   width: 100vw;
-  height: 92vh;
+  height: 100vh;
   background-color: #ffffff;
   display: flex;
   justify-content: center;
@@ -22,7 +22,10 @@
   justify-content: space-around;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
+  .container2 {
+    height: 94vh;
+  }
   .about {
     flex-direction: column;
   }

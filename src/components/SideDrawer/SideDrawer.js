@@ -1,15 +1,21 @@
 import React from "react";
 import "./SideDrawer.css";
+import drawerToggleButton from "./DrawerToggleButton";
 
 const sideDrawer = (props) => {
+  let drawerClasses = "side-drawer";
+  if (props.show) {
+    drawerClasses = "side-drawer open";
+  }
+
   return (
-    <nav className="side-drawer">
+    <nav className={drawerClasses} onClick={props.click}>
       <ul>
         <li>
-          <a href="/">Home</a>
+          <a href="#home">Home</a>
         </li>
         <li>
-          <a href="/">About</a>
+          <a href="#about">About</a>
         </li>
         <li>
           <a href="/">Portfolio</a>
