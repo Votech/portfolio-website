@@ -1,6 +1,5 @@
 import React from "react";
 import "./SideDrawer.css";
-import drawerToggleButton from "./DrawerToggleButton";
 
 const sideDrawer = (props) => {
   let drawerClasses = "side-drawer";

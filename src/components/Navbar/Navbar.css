@@ -5,7 +5,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  /*background-color: #1b242f;*/
+  background-color: #1b242f;
   z-index: 100;
 }
 
@@ -30,41 +30,32 @@
   font-size: 1.3rem;
   margin: 0 20px;
   letter-spacing: 3px;
+  padding-bottom: 4px;
 }
 
 .navbar_navig_items a:hover,
 .navbar_navig_items a:active {
-  color: #e31b6d;
-  font-weight: 800;
   border-bottom: 2px solid #e31b6d;
 }
 
 @media (max-width: 768px) {
   .drawerToggleButton {
-    height: 100%;
     margin-right: 5vw;
   }
 
   .navbar_navig_items {
     display: none;
+    height: 100%;
   }
   .navbar {
     background-color: #1b242f;
     height: 6vh;
     z-index: 300;
   }
-
-  .navbar_navig {
-    width: 100vw;
-  }
 }
 
 @media (min-width: 769px) {
   .drawerToggleButton {
     display: none;
-  }
-
-  .navbar {
-    height: 8vh;
   }
 }

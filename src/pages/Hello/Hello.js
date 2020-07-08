@@ -73,14 +73,16 @@ const Hello = () => {
             </span>
             . <br></br> I'm a full-stack developer.
           </div>
-          <button
-            className="first_button"
-            onMouseEnter={toggleHover}
-            onMouseLeave={toggleHover}
-          >
-            <div>View my work</div>{" "}
-            <Arrow className={hovered ? "arrow arrowRotate" : "arrow"} />
-          </button>
+          <a href="#about">
+            <button
+              className="first_button"
+              onMouseEnter={toggleHover}
+              onMouseLeave={toggleHover}
+            >
+              <div className="first_button_text">View my work</div>
+              <Arrow className={hovered ? "arrow arrowRotate" : "arrow"} />
+            </button>
+          </a>
         </div>
       </div>
     </div>

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
-import Hello from "../components/Hello/Hello";
-import About from "../components/About/About";
+import Hello from "../pages/Hello/Hello";
+import About from "../pages/About/About";
 import Navbar from "../components/Navbar/Navbar";
 import SideDrawer from "../components/SideDrawer/SideDrawer";
 import Backdrop from "../components/Backdrop/Backdrop";

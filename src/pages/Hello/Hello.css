@@ -34,19 +34,26 @@
   line-height: 36px;
 }
 
+.wrapper a {
+  text-decoration: none;
+}
+
 .first_button {
-  color: #ffffff;
   border: 2px solid #ffffff;
   box-sizing: inherit;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
   width: 180px;
-  font-size: 16pt;
-  font-weight: 600;
   padding: 12px 20px 12px 20px;
   margin-bottom: 53px;
   background-color: transparent;
+}
+
+.first_button_text {
+  color: #ffffff;
+  font-size: 16pt;
+  font-weight: 600;
 }
 
 button:hover {
