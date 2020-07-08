@@ -2,9 +2,12 @@ import React, { Component } from "react";
 import "./App.css";
 import Hello from "../pages/Hello/Hello";
 import About from "../pages/About/About";
+import Projects from "../pages/Projects/Projects";
+import Contact from "../pages/Contact/Contact";
 import Navbar from "../components/Navbar/Navbar";
 import SideDrawer from "../components/SideDrawer/SideDrawer";
 import Backdrop from "../components/Backdrop/Backdrop";
+import Footer from "../components/Footer/Footer";
 
 class App extends Component {
   state = {
@@ -40,6 +43,9 @@ class App extends Component {
         />
         {backdrop}
         {<About />}
+        <Projects />
+        <Contact />
+        <Footer />
       </div>
     );
   }

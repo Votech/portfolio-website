@@ -7,7 +7,7 @@ const About = () => {
     <div className="container2" id="about">
       <div className="wrapper2">
         <div>
-          <div className="titleAbout">
+          <div className="titlePage">
             <h1>about</h1>
             <div className="bottom_border" />
           </div>
@@ -37,7 +37,9 @@ const About = () => {
             </div>
             <div className="about_skills">
               <div className="about_subtitle">My Skills</div>
-              <SkillsList />
+              <div>
+                <SkillsList />
+              </div>
             </div>
           </div>
         </div>
