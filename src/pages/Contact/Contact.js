@@ -12,7 +12,12 @@ const Contact = () => {
         <div className="contact_highlight">
           Have a question or want to work together?
         </div>
-        <form className="contact_form" action="POST" data-netlify="true">
+        <form
+          className="contact_form"
+          name="contact"
+          method="POST"
+          data-netlify="true"
+        >
           <input placeholder="Name" type="text" name="name" required />
           <input placeholder="Enter email" type="email" name="email" required />
           <textarea
