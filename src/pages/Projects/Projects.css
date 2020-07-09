@@ -63,4 +63,12 @@
   .project {
     flex-direction: column-reverse;
   }
+
+  .project_picture {
+    padding: 0;
+  }
+
+  .project_info {
+    padding: 0;
+  }
 }
