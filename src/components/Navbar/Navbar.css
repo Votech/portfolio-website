@@ -24,7 +24,7 @@
   padding: none;
 }
 
-.navbar_navig_items a {
+.navbar_navig_links {
   color: #fefefe;
   text-decoration: none;
   font-size: 1.3rem;
@@ -33,9 +33,14 @@
   padding-bottom: 4px;
 }
 
-.navbar_navig_items a:hover,
-.navbar_navig_items a:active {
+.navbar_navig_links:hover {
   border-bottom: 2px solid #e31b6d;
+  transition: border-bottom 0.5s ease-in-out;
+}
+
+.navbar_navig_links--active {
+  border-bottom: 2px solid #e31b6d;
+  transition: border-bottom 0.5s ease-in-out;
 }
 
 @media (max-width: 768px) {

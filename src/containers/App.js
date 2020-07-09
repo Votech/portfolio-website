@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Switch, Route } from "react-router-dom";
 import "./App.css";
 import Hello from "../pages/Hello/Hello";
 import About from "../pages/About/About";
@@ -35,16 +36,18 @@ class App extends Component {
 
     return (
       <div style={{ height: "100%" }}>
-        <Hello />
         <Navbar drawerClickHandler={this.drawerToggleClickHandler} />
         <SideDrawer
           show={this.state.sideDrawerOpen}
           click={this.backdropClickHandler}
         />
         {backdrop}
-        {<About />}
-        <Projects />
-        <Contact />
+        <Switch>
+          <Route exact path="/" component={Hello} />
+          <Route exact path="/about" component={About} />
+          <Route exact path="/projects" component={Projects} />
+          <Route exact path="contact" component={Contact} />
+        </Switch>
         <Footer />
       </div>
     );
