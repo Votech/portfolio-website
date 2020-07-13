@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Particles from "react-particles-js";
+import { NavLink } from "react-router-dom";
 import "./Hello.css";
 import { ReactComponent as Arrow } from "./arrow.svg";
 
@@ -73,7 +74,7 @@ const Hello = () => {
             </span>
             . <br></br> I'm a full-stack developer.
           </div>
-          <a href="#about">
+          <NavLink to="/about">
             <button
               className="first_button"
               onMouseEnter={toggleHover}
@@ -82,7 +83,7 @@ const Hello = () => {
               <div className="first_button_text">View my work</div>
               <Arrow className={hovered ? "arrow arrowRotate" : "arrow"} />
             </button>
-          </a>
+          </NavLink>
         </div>
       </div>
     </div>

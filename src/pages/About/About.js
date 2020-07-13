@@ -2,7 +2,7 @@ import React from "react";
 import "./About.css";
 import SkillsList from "../../components/Skills_List/Skills_List";
 
-const About = () => {
+const About = (props) => {
   return (
     <div className="container2" id="about">
       <div className="wrapper2">

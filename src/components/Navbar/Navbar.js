@@ -5,8 +5,13 @@ import { NavLink } from "react-router-dom";
 import DrawerToggleButton from "../SideDrawer/DrawerToggleButton";
 
 const navbar = (props) => {
+  let navBarClasses = "navbar";
+  if (props.navBarOpen === true) {
+    navBarClasses = "navbar open";
+  }
+
   return (
-    <header className="navbar">
+    <header className={navBarClasses}>
       <nav className="navbar_navig">
         <div className="navbar_navig_items">
           <ul>
