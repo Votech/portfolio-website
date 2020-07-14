@@ -4,7 +4,6 @@ html {
   padding: 0px;
   width: 100vw;
   overflow-y: overlay;
-  scroll-behavior: smooth;
 }
 
 body {
