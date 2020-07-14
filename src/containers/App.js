@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Switch, Route, withRouter } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
 import "./App.css";
 import Hello from "../pages/Hello/Hello";
 import About from "../pages/About/About";
@@ -53,29 +54,31 @@ class App extends Component {
           drawerClickHandler={this.drawerToggleClickHandler}
           navBarOpen={this.state.navBarOpen}
         />
-        {this.props.location.pathname !== "/" ? (
-          <SideDrawer
-            show={this.state.sideDrawerOpen}
-            click={this.backdropClickHandler}
-          />
-        ) : null}
+
+        <SideDrawer
+          show={this.state.sideDrawerOpen}
+          click={this.backdropClickHandler}
+        />
+
         {backdrop}
-        <Switch location={this.props.location}>
-          <Route exact path="/" component={Hello} />
-          <Route
-            exact
-            path="/about"
-            render={(props) => (
-              <About
-                {...props}
-                route={this.state.route}
-                navBarOpener={this.navBarOpener}
-              />
-            )}
-          />
-          <Route exact path="/portfolio" component={Projects} />
-          <Route exact path="/contact" component={Contact} />
-        </Switch>
+        <AnimatePresence exitBeforeEnter>
+          <Switch location={this.props.location} key={this.props.location.key}>
+            <Route exact path="/" component={Hello} />
+            <Route
+              exact
+              path="/about"
+              render={(props) => (
+                <About
+                  {...props}
+                  route={this.state.route}
+                  navBarOpener={this.navBarOpener}
+                />
+              )}
+            />
+            <Route exact path="/portfolio" component={Projects} />
+            <Route exact path="/contact" component={Contact} />
+          </Switch>
+        </AnimatePresence>
         {this.props.location.pathname !== "/" ? <Footer /> : null}
       </div>
     );

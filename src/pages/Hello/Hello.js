@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Particles from "react-particles-js";
 import { NavLink } from "react-router-dom";
+import { motion } from "framer-motion";
 import "./Hello.css";
 import { ReactComponent as Arrow } from "./arrow.svg";
 
@@ -58,35 +59,120 @@ const particlesOptions = {
   },
 };
 
+const item = {
+  visible: {
+    opacity: 1,
+    transition: {
+      delay: 1,
+      duration: 2,
+    },
+  },
+  hidden: { opacity: 0 },
+};
+
+const item2 = {
+  visible: {
+    opacity: 1,
+    transition: {
+      delay: 2,
+      duration: 2,
+    },
+  },
+  hidden: { opacity: 0 },
+};
+
+const item3 = {
+  visible: {
+    opacity: 1,
+    transition: {
+      delay: 3,
+      duration: 2,
+    },
+  },
+  hidden: { opacity: 0 },
+};
+const item4 = {
+  visible: {
+    opacity: 1,
+    transition: {
+      delay: 4,
+      duration: 2,
+    },
+  },
+  hidden: { opacity: 0 },
+};
+
+const containerVariants = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: { delay: 0, duration: 1 },
+  },
+  exit: {
+    y: "-100vh",
+    opacity: 0.5,
+    transition: { ease: "easeInOut", duration: 0.5 },
+  },
+};
+
 const Hello = () => {
   const [hovered, setHovered] = useState(false);
   const toggleHover = () => setHovered(!hovered);
   return (
-    <div>
+    <motion.div
+      variants={containerVariants}
+      initial="hidden"
+      animate="visible"
+      exit="exit"
+    >
       <div className="container" id="home">
         <Particles className="particles" params={particlesOptions} />
         <div className="wrapper">
           <div className="text">
-            Hello, I'm{" "}
-            <span className="highlight" style={{ color: "#e31b6d" }}>
-              {" "}
-              Wojciech Mietlinski
-            </span>
-            . <br></br> I'm a full-stack developer.
-          </div>
-          <NavLink to="/about">
-            <button
-              className="first_button"
-              onMouseEnter={toggleHover}
-              onMouseLeave={toggleHover}
+            <motion.div
+              style={{ display: "inline-block" }}
+              variants={item}
+              initial="hidden"
+              animate="visible"
             >
-              <div className="first_button_text">View my work</div>
-              <Arrow className={hovered ? "arrow arrowRotate" : "arrow"} />
-            </button>
-          </NavLink>
+              Hello,
+            </motion.div>{" "}
+            <motion.div
+              style={{ display: "inline-block" }}
+              variants={item2}
+              initial="hidden"
+              animate="visible"
+            >
+              {" "}
+              I'm{" "}
+              <span className="highlight" style={{ color: "#e31b6d" }}>
+                {" "}
+                Wojciech Mietlinski
+              </span>
+              .{" "}
+            </motion.div>{" "}
+            <motion.div variants={item3} initial="hidden" animate="visible">
+              {" "}
+              I'm a full-stack developer.
+            </motion.div>
+          </div>
+          <motion.div variants={item4} initial="hidden" animate="visible">
+            <NavLink to="/about">
+              <button
+                className="first_button"
+                onMouseEnter={toggleHover}
+                onMouseLeave={toggleHover}
+              >
+                <div className="first_button_text">View my work</div>
+                <Arrow className={hovered ? "arrow arrowRotate" : "arrow"} />
+              </button>
+            </NavLink>
+          </motion.div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

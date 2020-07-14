@@ -1,7 +1,8 @@
 .contact_container {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  min-height: 100vh;
   width: 100vw;
   background-color: #252934;
   z-index: 3;
@@ -10,7 +11,7 @@
 .contact_wrapper {
   display: flex;
   flex-direction: column;
-  margin: 100px 0;
+  margin: 100px 0 0 0;
 }
 
 .titlePageContact {
@@ -93,6 +94,31 @@ textarea {
 .contact_button:hover {
   background-color: #04c2c9;
   border: 2px solid #04c2c9;
+}
+
+.footer_icons {
+  display: flex;
+  justify-content: center;
+}
+
+.footer_icon {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 55px;
+  margin: 50px 25px 50px 25px;
+  width: 55px;
+}
+
+.footer_icons a {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #8f9aa7;
+  cursor: pointer;
+  height: 55px;
+  margin: 50px 25px 50px 25px;
+  width: 55px;
 }
 
 @media only screen and (max-width: 968px) {

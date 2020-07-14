@@ -1,5 +1,6 @@
 import React from "react";
 import "./SideDrawer.css";
+import { NavLink } from "react-router-dom";
 
 const sideDrawer = (props) => {
   let drawerClasses = "side-drawer";
@@ -11,16 +12,41 @@ const sideDrawer = (props) => {
     <nav className={drawerClasses} onClick={props.click}>
       <ul>
         <li>
-          <a href="#home">Home</a>
+          <NavLink
+            exact
+            activeClassName="navbar_navig_links--active"
+            className="navbar_navig_links"
+            to="/"
+          >
+            Home
+          </NavLink>
         </li>
         <li>
-          <a href="#about">About</a>
+          <NavLink
+            activeClassName="navbar_navig_links--active"
+            className="navbar_navig_links"
+            to="/about"
+          >
+            About
+          </NavLink>
         </li>
         <li>
-          <a href="/">Portfolio</a>
+          <NavLink
+            activeClassName="navbar_navig_links--active"
+            className="navbar_navig_links"
+            to="/portfolio"
+          >
+            Portfolio
+          </NavLink>
         </li>
         <li>
-          <a href="/">Contact</a>
+          <NavLink
+            activeClassName="navbar_navig_links--active"
+            className="navbar_navig_links"
+            to="/contact"
+          >
+            Contact
+          </NavLink>
         </li>
       </ul>
     </nav>
