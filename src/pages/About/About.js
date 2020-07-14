@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import "./About.css";
 import SkillsList from "../../components/Skills_List/Skills_List";
 
@@ -103,7 +104,7 @@ const About = (props) => {
                 <br />
                 <p>
                   If you'd like to learn more about me or ask a question feel
-                  free to visit my <a href="/contact">contact section</a>.
+                  free to visit my <Link to="/contact">contact section</Link>.
                 </p>
               </div>
             </div>
