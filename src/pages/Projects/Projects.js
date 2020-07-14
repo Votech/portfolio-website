@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "./Projects.css";
-
+import PortfolioGif from "../../components/Gifs/animation1.gif";
 const containerVariants = {
   hidden: {
     opacity: 0,
@@ -94,6 +94,35 @@ const Projects = () => {
         <motion.div variants={item3} initial="hidden" animate="visible">
           <div className="project">
             <div className="project_info">
+              <div className="project_title">My Portfolio Website</div>
+              <div className="project_tag">portfolio website</div>
+              <div className="project_description">
+                <p>
+                  I created this website for my personal portfolio. Fully
+                  responsive, use{" "}
+                  <span style={{ fontWeight: "bold" }}>React.js</span>. Have a
+                  slider menu on mobile. Route transitions are animated. Contact
+                  form is working with netlify. Navigated with{" "}
+                  <span style={{ fontWeight: "bold" }}>React router</span>.
+                  Animations are made with{" "}
+                  <span style={{ fontWeight: "bold" }}>Framer motion.</span>
+                </p>
+              </div>
+              <div className="project_buttons">
+                <a href="/">
+                  <button className="project_button">VIEW SITE</button>
+                </a>
+                <a href="https://github.com/Votech/portfolio-website">
+                  <button className="project_button_view ">SOURCE CODE</button>
+                </a>
+              </div>
+            </div>
+            <div className="project_picture">
+              <img src={PortfolioGif} alt="portfolio gif"></img>
+            </div>
+          </div>
+          <div className="project">
+            <div className="project_info">
               <div className="project_title">Project Title</div>
               <div className="project_tag">Project tag</div>
               <div className="project_description">
@@ -109,8 +138,8 @@ const Projects = () => {
                 </p>
               </div>
               <div className="project_buttons">
-                <button>VIEW SITE</button>
-                <button>SOURCE CODE</button>
+                <button className="project_button">VIEW SITE</button>
+                <button className="project_button_view ">SOURCE CODE</button>
               </div>
             </div>
             <div className="project_picture">
@@ -134,33 +163,8 @@ const Projects = () => {
                 </p>
               </div>
               <div className="project_buttons">
-                <button>VIEW SITE</button>
-                <button>SOURCE CODE</button>
-              </div>
-            </div>
-            <div className="project_picture">
-              <img src="https://dummyimage.com/1920x1200/000/fff.png&text=1920x1200"></img>
-            </div>
-          </div>
-          <div className="project">
-            <div className="project_info">
-              <div className="project_title">Project Title</div>
-              <div className="project_tag">Project tag</div>
-              <div className="project_description">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum.
-                </p>
-              </div>
-              <div className="project_buttons">
-                <button>VIEW SITE</button>
-                <button>SOURCE CODE</button>
+                <button className="project_button">VIEW SITE</button>
+                <button className="project_button_view ">SOURCE CODE</button>
               </div>
             </div>
             <div className="project_picture">

@@ -121,6 +121,10 @@ textarea {
   width: 55px;
 }
 
+.footer_icons a:hover {
+  background: #c6d3e4;
+}
+
 @media only screen and (max-width: 968px) {
   .contact_form {
     width: 90vw;

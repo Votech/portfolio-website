@@ -91,9 +91,9 @@ const About = (props) => {
                   My name's Wojciech and I'm web developer who's passionate
                   about <span style={{ fontWeight: "bold" }}>JavaScript</span>.
                   I'm a developer, because I'm inspired by the idea of creating
-                  applications. I love to learn and develop new skills. I'm
-                  currently looking for oportunity to work with JavaScript
-                  framework.
+                  applications and being a better me today than i was yesterday.
+                  I love to learn and develop new skills. I'm currently looking
+                  for oportunity to work with JavaScript framework.
                 </p>
                 <br />
                 <p>

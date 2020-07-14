@@ -155,7 +155,7 @@ const Hello = () => {
             </motion.div>{" "}
             <motion.div variants={item3} initial="hidden" animate="visible">
               {" "}
-              I'm a full-stack developer.
+              I'm a Web Developer.
             </motion.div>
           </div>
           <motion.div variants={item4} initial="hidden" animate="visible">

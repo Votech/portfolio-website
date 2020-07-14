@@ -32,6 +32,7 @@
 }
 
 .navbar_navig_links {
+  font-weight: 700;
   color: #fefefe;
   text-decoration: none;
   font-size: 1.3rem;
@@ -41,11 +42,12 @@
 }
 
 .navbar_navig_links:hover {
-  border-bottom: 2px solid #e31b6d;
+  color: #e31b6d;
 }
 
 .navbar_navig_links--active {
-  border-bottom: 2px solid #e31b6d;
+  border-bottom: 4px solid #e31b6d;
+  transition: all 0.2s ease 0s;
 }
 
 @media (max-width: 768px) {
