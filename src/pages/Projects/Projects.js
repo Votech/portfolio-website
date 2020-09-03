@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import './Projects.css';
 import PortfolioGif from '../../components/Gifs/animation1.gif';
 import PerfectPlateGif from '../../components/Gifs/PerfectPlate.gif';
+import EcommerceGif from '../../components/Gifs/ecommerce.gif';
 const containerVariants = {
   hidden: {
     opacity: 0,
@@ -95,18 +96,48 @@ const Projects = () => {
         <motion.div variants={item3} initial='hidden' animate='visible'>
           <div className='project'>
             <div className='project_info'>
+              <div className='project_title'>Crwn Clothing</div>
+              <div className='project_tag'>e-commerce website</div>
+              <div className='project_description'>
+                <p>
+                  Crwn Clothing is a e-commerce website made with{' '}
+                  <span className='bold'>React.js</span>. Users can create new
+                  account or log in with google. Accounts are authenticated and
+                  stored in <span className='bold'>Firebase</span>. Items inside
+                  the cart are stored in local storage. Payments are processed
+                  with <span className='bold'>Stripe</span>. State is managed
+                  with
+                  <span className='bold'> Redux</span>. Website is styled with{' '}
+                  <span className='bold'>Sass</span> and is fully responsive.
+                  Hosted with <span className='bold'>Heroku</span>
+                </p>
+              </div>
+              <div className='project_buttons'>
+                <a href='https://go-crwn-ecommerce.herokuapp.com/'>
+                  <button className='project_button'>VIEW SITE</button>
+                </a>
+                <a href='https://github.com/Votech/e-shop'>
+                  <button className='project_button_view '>SOURCE CODE</button>
+                </a>
+              </div>
+            </div>
+            <div className='project_picture'>
+              <img src={EcommerceGif} alt='Perfect Plate Gif'></img>
+            </div>
+          </div>
+          <div className='project'>
+            <div className='project_info'>
               <div className='project_title'>Perfect Plate</div>
               <div className='project_tag'>Discover recipes</div>
               <div className='project_description'>
                 <p>
                   With Perfect Plate you get access to over 3600k recipes. You
                   can search by ingredients, calories and nutrients. Website is
-                  made in<span style={{ fontWeight: 'bold' }}> React.js</span>,
-                  fetching data from spoonacular API. Use{' '}
-                  <span style={{ fontWeight: 'bold' }}>React router</span> for
-                  routes.{' '}
-                  <span style={{ fontWeight: 'bold' }}>Material UI</span> for a
-                  css.
+                  made in<span className='bold'> React.js</span>, fetching data
+                  from spoonacular API.
+                  <span className='bold'> React router</span> for routes. Styled
+                  with
+                  <span className='bold'> Material UI</span>.
                 </p>
               </div>
               <div className='project_buttons'>
@@ -128,14 +159,13 @@ const Projects = () => {
               <div className='project_tag'>portfolio website</div>
               <div className='project_description'>
                 <p>
-                  I created this website for my personal portfolio. Fully
-                  responsive, use{' '}
-                  <span style={{ fontWeight: 'bold' }}>React.js</span>. Have a
-                  slider menu on mobile. Route transitions are animated. Contact
-                  form is working with netlify. Navigated with{' '}
-                  <span style={{ fontWeight: 'bold' }}>React router</span>.
-                  Animations are made with{' '}
-                  <span style={{ fontWeight: 'bold' }}>Framer motion.</span>
+                  I created this website with{' '}
+                  <span className='bold'>React.js</span> for my personal
+                  portfolio. Fully responsive. Have a slider menu on mobile.
+                  Route transitions are animated. Contact form is working with
+                  netlify. Navigated with{' '}
+                  <span className='bold'>React router</span>. Animations are
+                  made with <span className='bold'>Framer motion.</span>
                 </p>
               </div>
               <div className='project_buttons'>
@@ -149,32 +179,6 @@ const Projects = () => {
             </div>
             <div className='project_picture'>
               <img src={PortfolioGif} alt='portfolio gif'></img>
-            </div>
-          </div>
-
-          <div className='project'>
-            <div className='project_info'>
-              <div className='project_title'>Project Title</div>
-              <div className='project_tag'>Project tag</div>
-              <div className='project_description'>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum.
-                </p>
-              </div>
-              <div className='project_buttons'>
-                <button className='project_button'>VIEW SITE</button>
-                <button className='project_button_view '>SOURCE CODE</button>
-              </div>
-            </div>
-            <div className='project_picture'>
-              <img src='https://dummyimage.com/1920x1200/000/fff.png&text=1920x1200'></img>
             </div>
           </div>
         </motion.div>

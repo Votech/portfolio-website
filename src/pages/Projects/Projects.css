@@ -7,6 +7,10 @@
   z-index: 3;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 .projects_wrapper {
   display: flex;
   flex-direction: column;
