@@ -1,9 +1,14 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import './Projects.css';
+
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import { Carousel } from 'react-responsive-carousel';
+
 import PortfolioGif from '../../components/Gifs/animation1.gif';
 import PerfectPlateGif from '../../components/Gifs/PerfectPlate.gif';
 import EcommerceGif from '../../components/Gifs/ecommerce.gif';
+
 const containerVariants = {
   hidden: {
     opacity: 0,
@@ -122,6 +127,20 @@ const Projects = () => {
               </div>
             </div>
             <div className='project_picture'>
+              <Carousel>
+                <div>
+                  <img src='https://images.unsplash.com/photo-1602090573683-68c6f9228ed7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60' />
+                  <p className='legend'></p>
+                </div>
+                <div>
+                  <img src='https://images.unsplash.com/photo-1602082389704-f67e2b6fb08d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60' />
+                  <p className='legend'></p>
+                </div>
+                <div>
+                  <img src='https://images.unsplash.com/photo-1601758002737-1919f3ba2774?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60' />
+                  <p className='legend'></p>
+                </div>
+              </Carousel>
               <img src={EcommerceGif} alt='Perfect Plate Gif'></img>
             </div>
           </div>

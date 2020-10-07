@@ -32,10 +32,12 @@
   z-index: 1;
   font-size: 20px;
   line-height: 36px;
+  pointer-events: none;
 }
 
 .wrapper a {
   text-decoration: none;
+  pointer-events: auto;
 }
 
 .first_button {
