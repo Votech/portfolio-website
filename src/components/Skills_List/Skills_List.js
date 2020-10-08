@@ -11,6 +11,8 @@ import { ReactComponent as NodejsIcon } from '../icons/nodejs-icon.svg';
 import { ReactComponent as PostgresqlIcon } from '../icons/postgresql.svg';
 import { ReactComponent as ReduxIcon } from '../icons/redux.svg';
 import { ReactComponent as FirebaseIcon } from '../icons/firebase.svg';
+import { ReactComponent as GitIcon } from '../icons/git.svg';
+import { ReactComponent as HerokuIcon } from '../icons/heroku-icon.svg';
 
 const skill_list = () => {
   return (
@@ -31,6 +33,12 @@ const skill_list = () => {
         <JsIcon className='icon' />
         <div>
           <b>JavaScript</b>
+        </div>
+      </div>
+      <div className='card_skills'>
+        <GitIcon className='icon' />
+        <div>
+          <b>Git</b>
         </div>
       </div>
       <div className='card_skills'>
@@ -73,6 +81,12 @@ const skill_list = () => {
         <PostgresqlIcon className='icon' />
         <div>
           <b>PostgreSQL</b>
+        </div>
+      </div>
+      <div className='card_skills'>
+        <HerokuIcon className='icon' />
+        <div>
+          <b>Heroku</b>
         </div>
       </div>
     </div>
