@@ -1,8 +1,9 @@
-import React from "react";
-import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
-import "./About.css";
-import SkillsList from "../../components/Skills_List/Skills_List";
+import React from 'react';
+import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
+import './About.css';
+import SkillsList from '../../components/Skills_List/Skills_List';
+import Resume from '../../documents/Wojciech Mietlinski CV.pdf';
 
 const containerVariants = {
   hidden: {
@@ -13,84 +14,84 @@ const containerVariants = {
     transition: { delay: 0, duration: 1.5 },
   },
   exit: {
-    x: "-100vw",
-    transition: { ease: "easeInOut" },
+    x: '-100vw',
+    transition: { ease: 'easeInOut' },
   },
 };
 
 const item = {
   visible: {
     opacity: 1,
-    x: "0",
+    x: '0',
     transition: {
       delay: 0,
       duration: 2,
-      type: "spring",
+      type: 'spring',
     },
   },
-  hidden: { opacity: 1, x: "-50vw" },
+  hidden: { opacity: 1, x: '-50vw' },
 };
 
 const item2 = {
   visible: {
     opacity: 1,
-    x: "0",
+    x: '0',
     transition: {
       delay: 0.05,
       duration: 2,
-      type: "spring",
+      type: 'spring',
     },
   },
-  hidden: { opacity: 1, x: "-50vw" },
+  hidden: { opacity: 1, x: '-50vw' },
 };
 
 const item3 = {
   visible: {
     opacity: 1,
-    y: "0",
+    y: '0',
     transition: {
       delay: 0.0,
       duration: 0.5,
     },
   },
-  hidden: { opacity: 1, y: "50vh" },
+  hidden: { opacity: 1, y: '50vh' },
 };
 
 const About = (props) => {
   return (
     <motion.div
-      className="container2"
-      id="about"
+      className='container2'
+      id='about'
       variants={containerVariants}
-      initial="hidden"
-      animate="visible"
-      exit="exit"
+      initial='hidden'
+      animate='visible'
+      exit='exit'
     >
-      <div className="wrapper2">
+      <div className='wrapper2'>
         <div>
-          <div className="titlePage">
-            <motion.h1 variants={item} initial="hidden" animate="visible">
+          <div className='titlePage'>
+            <motion.h1 variants={item} initial='hidden' animate='visible'>
               about
             </motion.h1>
             <motion.div
-              className="bottom_border"
+              className='bottom_border'
               variants={item2}
-              initial="hidden"
-              animate="visible"
+              initial='hidden'
+              animate='visible'
             />
           </div>
           <motion.div
-            className="about"
+            className='about'
             variants={item3}
-            initial="hidden"
-            animate="visible"
+            initial='hidden'
+            animate='visible'
           >
-            <div className="about_description">
-              <div className="about_subtitle">Hi</div>
+            <div className='about_description'>
+              <div className='about_subtitle'>Hi</div>
               <div>
                 <p>
                   My name's Wojciech and I'm web developer who's passionate
-                  about <span style={{ fontWeight: "bold" }}>JavaScript</span>.
+                  about <span style={{ fontWeight: 'bold' }}>JavaScript</span>.
                   I'm a developer, because I'm inspired by the idea of creating
                   applications and being a better me today than i was yesterday.
                   I love to learn and develop new skills. I'm currently looking
@@ -104,12 +105,16 @@ const About = (props) => {
                 <br />
                 <p>
                   If you'd like to learn more about me or ask a question feel
-                  free to visit my <Link to="/contact">contact section</Link>.
+                  free to visit my <Link to='/contact'>contact section</Link>.
                 </p>
+                <a href={Resume}>
+                  {' '}
+                  <button className='about_button'>RESUME</button>
+                </a>
               </div>
             </div>
-            <div className="about_skills">
-              <div className="about_subtitle">My Skills</div>
+            <div className='about_skills'>
+              <div className='about_subtitle'>My Skills</div>
               <div>
                 <SkillsList />
               </div>
