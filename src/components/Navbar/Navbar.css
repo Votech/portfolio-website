@@ -5,6 +5,7 @@
   top: 0;
   left: 0;
   width: 100vw;
+  height: 57px;
   /* background-color: #1b242f; */
   background: rgb(27, 36, 47);
   background: linear-gradient(
@@ -42,9 +43,9 @@
   color: #fefefe;
   text-decoration: none;
   font-size: 1.3rem;
-  margin: 0 20px;
+  padding: 0 20px;
   letter-spacing: 3px;
-  padding-bottom: 4px;
+  padding-bottom: 12px;
 }
 
 .navbar_navig_links:hover {
@@ -52,7 +53,7 @@
 }
 
 .navbar_navig_links--active {
-  border-bottom: 3px solid #e31b6d;
+  border-bottom: 4px solid #e31b6d;
   transition: all 0.2s ease 0s;
 }
 
