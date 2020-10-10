@@ -5,7 +5,13 @@
   top: 0;
   left: 0;
   width: 100vw;
-  background-color: #1b242f;
+  /* background-color: #1b242f; */
+  background: rgb(27, 36, 47);
+  background: linear-gradient(
+    180deg,
+    rgba(27, 36, 47, 1) 0%,
+    rgba(31, 41, 52, 1) 100%
+  );
   z-index: 100;
   transform: translatey(-60px);
   transition: transform 0.4s ease-out;
@@ -32,7 +38,7 @@
 }
 
 .navbar_navig_links {
-  font-weight: 700;
+  font-weight: 500;
   color: #fefefe;
   text-decoration: none;
   font-size: 1.3rem;
@@ -46,7 +52,7 @@
 }
 
 .navbar_navig_links--active {
-  border-bottom: 4px solid #e31b6d;
+  border-bottom: 3px solid #e31b6d;
   transition: all 0.2s ease 0s;
 }
 

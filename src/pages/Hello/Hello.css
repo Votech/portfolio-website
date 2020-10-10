@@ -1,7 +1,13 @@
 .container {
   width: 100vw;
   height: 100vh;
-  background-color: #252934;
+  /* background-color: #252934; */
+  background: rgb(35, 39, 48);
+  background: linear-gradient(
+    45deg,
+    rgba(35, 39, 48, 1) 0%,
+    rgba(50, 56, 71, 1) 100%
+  );
   display: flex;
   justify-content: center;
   align-items: center;
