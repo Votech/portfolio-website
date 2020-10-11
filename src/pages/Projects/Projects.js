@@ -132,6 +132,15 @@ const Projects = () => {
                   <span className='bold'>
                     React.js, Redux, Firebase, Sass, Heroku{' '}
                   </span>
+                  <br />
+                  <br />
+                  <span className='bold'>(Real time chat is comming soon)</span>
+                  <br />
+                  <br />
+                  <span style={{ color: 'red' }}>
+                    *First access to the app might take some extra time, due to
+                    free tier on heroku*
+                  </span>
                 </p>
               </div>
               <div className='project_buttons'>
@@ -169,16 +178,22 @@ const Projects = () => {
               <div className='project_tag'>e-commerce website</div>
               <div className='project_description'>
                 <p>
-                  Crwn Clothing is a e-commerce website made with{' '}
+                  Crwn Clothing is a e-commerce website made with
                   <span className='bold'>React.js</span>. Users can create new
                   account or log in with google. Accounts are authenticated and
                   stored in <span className='bold'>Firebase</span>. Items inside
                   the cart are stored in local storage. Payments are processed
                   with <span className='bold'>Stripe</span>. State is managed
                   with
-                  <span className='bold'> Redux</span>. Website is styled with{' '}
+                  <span className='bold'> Redux</span>. Website is styled with
                   <span className='bold'>Sass</span> and is fully responsive.
                   Hosted with <span className='bold'>Heroku</span>
+                  <br />
+                  <br />
+                  <span style={{ color: 'red' }}>
+                    *First access to the app might take some extra time, due to
+                    free tier on heroku*
+                  </span>
                 </p>
               </div>
               <div className='project_buttons'>
