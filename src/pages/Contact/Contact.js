@@ -104,6 +104,9 @@ const Contact = () => {
           animate="visible"
         >
           Have a question or want to work together?
+          <br />
+          <br />
+          mietlinski.wojtek@gmail.com
         </motion.div>
         <motion.div variants={item4} initial="hidden" animate="visible">
           <form
