@@ -83,6 +83,10 @@
   border: 2px solid #45474a;
 }
 
+.project_button:focus {
+  outline: 0;
+}
+
 .project_button_view {
   color: #45474a;
   cursor: pointer;

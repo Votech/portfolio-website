@@ -5,10 +5,6 @@ import './Projects.css';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
 
-import PortfolioGif from '../../components/Gifs/animation1.gif';
-import PerfectPlateGif from '../../components/Gifs/PerfectPlate.gif';
-import EcommerceGif from '../../components/Gifs/ecommerce.gif';
-
 import Pic11 from '../../components/images/1-pic-1.png';
 import Pic12 from '../../components/images/1-pic-2.png';
 import Pic13 from '../../components/images/1-pic-3.png';
@@ -79,21 +75,6 @@ const item3 = {
   hidden: { opacity: 1, y: '50vh' },
 };
 
-const list = {
-  visible: {
-    opacity: 1,
-    transition: {
-      when: 'beforeChildren',
-      staggerChildren: 0.3,
-    },
-  },
-  hidden: {
-    opacity: 0,
-    transition: {
-      when: 'afterChildren',
-    },
-  },
-};
 
 const Projects = () => {
   return (

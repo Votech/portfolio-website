@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import './About.css';
 import SkillsList from '../../components/Skills_List/Skills_List';
-import Resume from '../../documents/Wojciech Mietlinski CV.pdf';
+import Resume from '../../documents/Wojciech-Mietlinski-CV.pdf';
 
 const containerVariants = {
   hidden: {
@@ -71,7 +71,7 @@ const About = (props) => {
         <div>
           <div className='titlePage'>
             <motion.h1 variants={item} initial='hidden' animate='visible'>
-              about
+              about me
             </motion.h1>
             <motion.div
               className='bottom_border'
@@ -87,7 +87,7 @@ const About = (props) => {
             animate='visible'
           >
             <div className='about_description'>
-              <div className='about_subtitle'>Hi</div>
+              <div className='about_subtitle'>Hello</div>
               <div>
                 <p>
                   My name's Wojciech and I'm web developer who's passionate

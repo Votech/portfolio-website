@@ -7,16 +7,69 @@
   width: 100vw;
   height: 57px;
   /* background-color: #1b242f; */
-  background: rgb(27, 36, 47);
-  background: linear-gradient(
-    180deg,
-    rgba(27, 36, 47, 1) 0%,
-    rgba(31, 41, 52, 1) 100%
-  );
+
   z-index: 100;
   transform: translatey(-60px);
   transition: transform 0.4s ease-out;
   transition-delay: 1000ms;
+}
+
+.navbar--scrolled {
+  /* background: rgb(237, 237, 237);
+  background: linear-gradient(
+    45deg,
+    rgba(237, 237, 237, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  ); */
+  background: rgb(180, 180, 180);
+  background: linear-gradient(
+    225deg,
+    rgba(180, 180, 180, 1) 0%,
+    rgba(245, 245, 245, 1) 50%,
+    rgba(230, 230, 230, 1) 94%,
+    rgba(181, 181, 181, 1) 100%
+  );
+  -webkit-box-shadow: -3px 7px 8px 0px rgba(120, 120, 120, 1);
+  -moz-box-shadow: -3px 7px 8px 0px rgba(120, 120, 120, 1);
+  box-shadow: -3px 7px 8px 0px rgba(120, 120, 120, 1);
+}
+
+.navbar--background-about {
+  background: rgb(180, 180, 180);
+  background: linear-gradient(
+    225deg,
+    rgba(180, 180, 180, 1) 0%,
+    rgba(245, 245, 245, 1) 50%,
+    rgba(230, 230, 230, 1) 94%,
+    rgba(181, 181, 181, 1) 100%
+  );
+
+  -webkit-box-shadow: -3px 7px 8px 0px rgba(120, 120, 120, 1);
+  -moz-box-shadow: -3px 7px 8px 0px rgba(120, 120, 120, 1);
+  box-shadow: -3px 7px 8px 0px rgba(120, 120, 120, 1);
+  transition: 0.2s ease 0s;
+}
+
+.navbar--background-portfolio {
+  background: rgb(237, 237, 237);
+  background: linear-gradient(
+    45deg,
+    rgba(237, 237, 237, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+
+  -webkit-box-shadow: -3px 7px 8px 0px rgba(120, 120, 120, 1);
+  -moz-box-shadow: -3px 7px 8px 0px rgba(120, 120, 120, 1);
+  box-shadow: -3px 7px 8px 0px rgba(120, 120, 120, 1);
+  transition: 0.2s ease 0s;
+}
+
+.navbar--background-contact {
+  background-color: #1b242f;
+  -webkit-box-shadow: -3px 7px 8px 0px rgb(0, 0, 0);
+  -moz-box-shadow: -3px 7px 8px 0px rgb(0, 0, 0);
+  box-shadow: -3px 7px 8px 0px rgb(0, 0, 0);
+  transition: 0.2s ease 0s;
 }
 
 .navbar.open {
@@ -39,15 +92,19 @@
 }
 
 .navbar_navig_links {
-  font-weight: 500;
+  font-weight: 600;
   color: #fefefe;
   text-decoration: none;
   font-size: 1.3rem;
   padding: 0 20px;
   letter-spacing: 3px;
   padding-bottom: 12px;
+  -webkit-font-smoothing: grayscale;
 }
 
+.navbar_navig_links_dark {
+  color: #1b242f;
+}
 .navbar_navig_links:hover {
   color: #e31b6d;
 }
@@ -70,6 +127,16 @@
     background-color: #1b242f;
     height: 6vh;
     z-index: 300;
+  }
+  .navbar_navig_links {
+    padding-bottom: 3px;
+  }
+
+  .navbar--background-about,
+  .navbar--background-portfolio,
+  .navbar--background-contact {
+    background: #1b242f;
+    box-shadow: none;
   }
 }
 

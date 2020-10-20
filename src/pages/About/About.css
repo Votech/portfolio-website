@@ -92,13 +92,14 @@
 }
 
 .about_button {
-  border: 2px solid #45474a;
-  color: #45474a;
+  border: 2px solid #e31b6d;
+  color: #ffffff;
   width: 120px;
   cursor: pointer;
   padding: 10px 0px;
   margin: 5px 20px 0 0;
-  background-color: transparent;
+  background-color: #e31b6d;
+  letter-spacing: 3px;
   font-size: 12pt;
   font-weight: 600;
 }
@@ -106,8 +107,12 @@
 .about_button:hover {
   transition: 0.2s ease 0s;
   color: #ffffff;
-  background-color: #45474a;
-  border: 2px solid #45474a;
+  background-color: #b31758;
+  border: 2px solid #b31758;
+}
+
+.about_button:focus {
+  outline: 0;
 }
 
 @media only screen and (max-width: 968px) {
