@@ -51,17 +51,32 @@
 }
 
 .navbar--background-portfolio {
-  background: rgb(237, 237, 237);
+  /* background: rgb(237, 237, 237);
   background: linear-gradient(
     45deg,
     rgba(237, 237, 237, 1) 0%,
     rgba(255, 255, 255, 1) 100%
-  );
+  ); */
+
+  /* background: rgb(180, 180, 180);
+  background: linear-gradient(
+    225deg,
+    rgba(180, 180, 180, 1) 0%,
+    rgba(245, 245, 245, 1) 50%,
+    rgba(230, 230, 230, 1) 94%,
+    rgba(181, 181, 181, 1) 100%
+  ); */
 
   -webkit-box-shadow: -3px 7px 8px 0px rgba(120, 120, 120, 1);
   -moz-box-shadow: -3px 7px 8px 0px rgba(120, 120, 120, 1);
   box-shadow: -3px 7px 8px 0px rgba(120, 120, 120, 1);
-  transition: 0.2s ease 0s;
+
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='900' preserveAspectRatio='none' viewBox='0 0 1440 900'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1402%26quot%3b)' fill='none'%3e%3crect width='1440' height='900' x='0' y='0' fill='url(%23SvgjsLinearGradient1403)'%3e%3c/rect%3e%3cpath d='M945.68 523.68 a280.25 280.25 0 1 0 560.5 0 a280.25 280.25 0 1 0 -560.5 0z' fill='rgba(4%2c 194%2c 201%2c 0.1)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M327.93 814.23 a161.82 161.82 0 1 0 323.64 0 a161.82 161.82 0 1 0 -323.64 0z' fill='rgba(4%2c 194%2c 201%2c 0.1)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M443.07 864.32 a217.12 217.12 0 1 0 434.24 0 a217.12 217.12 0 1 0 -434.24 0z' fill='rgba(4%2c 194%2c 201%2c 0.1)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1080.38 611.54 a258.71 258.71 0 1 0 517.42 0 a258.71 258.71 0 1 0 -517.42 0z' fill='rgba(4%2c 194%2c 201%2c 0.1)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M912.15 827.41 a161.63 161.63 0 1 0 323.26 0 a161.63 161.63 0 1 0 -323.26 0z' fill='rgba(4%2c 194%2c 201%2c 0.1)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M-220.08 114.19 a272.29 272.29 0 1 0 544.58 0 a272.29 272.29 0 1 0 -544.58 0z' fill='rgba(4%2c 194%2c 201%2c 0.1)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M224.52 21.29 a258.56 258.56 0 1 0 517.12 0 a258.56 258.56 0 1 0 -517.12 0z' fill='rgba(4%2c 194%2c 201%2c 0.1)' class='triangle-float1'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1402'%3e%3crect width='1440' height='900' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='90.63%25' y1='-15%25' x2='9.38%25' y2='115%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1403'%3e%3cstop stop-color='rgba(181%2c 181%2c 181%2c 1)' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(246%2c 246%2c 246%2c 1)' offset='0.49'%3e%3c/stop%3e%3cstop stop-color='rgba(230%2c 230%2c 230%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .navbar--background-contact {

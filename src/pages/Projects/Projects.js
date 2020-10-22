@@ -22,6 +22,7 @@ import Pic42 from '../../components/images/4-pic-2.png';
 import Pic43 from '../../components/images/4-pic-3.png';
 import Pic44 from '../../components/images/4-pic-4.png';
 import Pic45 from '../../components/images/4-pic-5.png';
+import Pic46 from '../../components/images/4-pic-6.png';
 
 const containerVariants = {
   hidden: {
@@ -104,18 +105,15 @@ const Projects = () => {
               <div className='project_tag'>Facebook clone</div>
               <div className='project_description'>
                 <p>
-                  Friend-book is a facebook clone, users can create posts,
+                  Friend-book is a clone of <span className='bold'>facebook</span> with integrated <span className='bold'>real-time chat </span>. Users can create posts,
                   comment them and like them. Pictures can be uploaded directly
                   from device or by pasting URL to the picture. Users can also
                   search for friends and send them friend request. All requests
                   will show up in notification component. App is deployed on
-                  Heroku. Stack:{' '}
+                  Heroku. Stack: {' '}
                   <span className='bold'>
                     React.js, Redux, Firebase, Sass, Heroku{' '}
-                  </span>
-                  <br />
-                  <br />
-                  <span className='bold'>(Real time chat is comming soon)</span>
+                  </span>.
                   <br />
                   <br />
                   <span style={{ color: 'red' }}>
@@ -139,7 +137,7 @@ const Projects = () => {
                   <img src={Pic41} alt='front page' />
                 </div>
                 <div>
-                  <img src={Pic42} alt='second page' />
+                  <img src={Pic46} alt='second page' />
                 </div>
                 <div>
                   <img src={Pic43} alt='third page' />
@@ -160,15 +158,15 @@ const Projects = () => {
               <div className='project_description'>
                 <p>
                   Crwn Clothing is a e-commerce website made with
-                  <span className='bold'>React.js</span>. Users can create new
+                  <span className='bold'> React.js</span>. Users can create new
                   account or log in with google. Accounts are authenticated and
                   stored in <span className='bold'>Firebase</span>. Items inside
                   the cart are stored in local storage. Payments are processed
                   with <span className='bold'>Stripe</span>. State is managed
                   with
                   <span className='bold'> Redux</span>. Website is styled with
-                  <span className='bold'>Sass</span> and is fully responsive.
-                  Hosted with <span className='bold'>Heroku</span>
+                  <span className='bold'> Sass</span> and is fully responsive.
+                  Hosted with <span className='bold'>Heroku</span>.
                   <br />
                   <br />
                   <span style={{ color: 'red' }}>
